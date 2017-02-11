@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test4</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html,body{
+		height: 100%;
+	}
+	.wrap{
+		height: 200px;
+		width: 400px;
+		background: #ccc;
+		position: relative;
+		top:50%;
+		left: 50%;
+		margin-top: -100px;
+		margin-left: -200px;
+		overflow: hidden;
+	}
+	.one,.two{
+		background: #fc0;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;		
+	}
+	.one{
+		top:-50px;
+		left: -50px;
+	}
+	.two{
+		right: -50px;
+		bottom: -50px;
+	}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="one"></div>
+	<div class="two"></div>
+</div>
+</body>
+</html>

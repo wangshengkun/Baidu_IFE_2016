@@ -256,6 +256,7 @@ header{
 .last{
 	margin-top: 20px;
 	background-color: #eeedd6;
+	height: 357px;
 }
 .last p{
 	margin:20px 10px;
@@ -281,7 +282,7 @@ header{
 }
 .lastL{
 	float: left;
-	margin-top: 40px;
+	margin-top: 30px;
 	width: 240px;
 	height: 160px;
 	background-color: #d45d5c;
@@ -314,5 +315,44 @@ header{
 }
 .lastR{
 	float: left;
-	margin-top: 40px;
+	margin-top: 30px;
+	margin-left: 10px;
+	width: 168px;
+	height: 160px;
+	margin-bottom: 30px;
+}
+.quotation_1{
+	float: left;
+	height: 30px;
+	width: 85px;
+	font-size: 72px;
+	color:#d45d5c;
+	font-family: "黑体";
+	margin-left: -40px;
+}
+.lastR p{
+	font-size: 14px;
+	color: #5a5b5b;
+	font-family: "黑体";
+}
+.quotation_2{
+	float: right;
+	height: 30px;
+	width: 85px;
+	font-size: 72px;
+	color:#d45d5c;
+	margin-top: -40px;
+	font-family: "黑体";
+}
+footer{
+	clear: both;
+	border-top:1px solid #938e8c;
+	width: 892px;
+	height: 40px;
+}
+footer div{
+	float: right;
+	font-size: 12px;
+	font-family: "黑体";
+	color: #d1245c;
 }

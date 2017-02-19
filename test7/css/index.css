@@ -2,12 +2,15 @@
 	margin:0;
 	padding:0;
 	font-size: 14px;
+	font-family: "微软雅黑";
 	color:#ccc;
 }
 a{
 	text-decoration: none;
+	cursor:pointer;		/*光标改变*/
 }
 header{
+	min-width: 1280px;
 	height: 58px;
 	width: 100%;
 	background-color: #fff;
@@ -39,7 +42,7 @@ nav{
 }
 nav a{
 	margin-right: 44px;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	font-weight: bold;
 }
 nav a:hover{
@@ -53,10 +56,159 @@ nav a:hover{
 .loginTxt{
 	color: #e74f4d;
 	font-weight: bold;
+	cursor:pointer;
 }
 .one{
 	background: url("../img/promo.jpg") no-repeat;
+	position: relative;
 	width: 100%;
+	min-width: 1280px;		/*不指定最小宽度的话absolute会固定*/
 	height: 688px;
-	background-size: 100% 688px;	/*Firefox浏览器下控制背景图片大小。*/
+	background-size: 100% auto;	/*Firefox浏览器下控制背景图片大小。*/
+	opacity: 0.95;
+}
+.one .txt_1{
+	position: absolute;
+	left:116px;
+	top:228px;
+	font-size: 60px;
+	color: #fff;
+}
+.one .txt_2{
+	position: absolute;
+	left:116px;
+	top:308px;
+	font-size: 21px;
+	color: #fff;
+}
+.startBtn{
+	position: absolute;
+	left: 116px;
+	top: 424px;
+	height: 66px;
+	width: 333px;
+	background-color: #e74f4d;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 66px;
+	cursor: pointer;
+}
+.two{
+	height: 250px;
+	width: 100%;
+	min-width: 1280px;
+	background-color: #fff;
+}
+.note{
+	float: left;
+	width: 25%;
+	height: 250px;
+}
+.notePhoto{
+	margin:46px 136px 46px 148px;
+}
+.note p{
+	font-weight: bold;
+	margin-left: 50px;
+	margin-right: 80px;
+	text-align: center;
+}
+.wrap{
+	height: 54px;	/*宽度自动继承父元素宽度？*/
+	border-right: 2px solid #ccc;
+}
+.three{
+	position: relative;
+	height: 360px;
+	width: 100%;
+	min-width: 1280px;
+	background-color: #ededed;
+}
+.three img{
+	position: absolute;
+	top:88px;
+	left: 50%; 
+	margin-left: -45px;
+}
+.three p{
+	position: absolute;
+	top:228px;
+	left: 50%;
+	margin-left: -419px;
+	font-size: 54px;
+}
+.four{
+	position: relative;
+	width: 100%;
+	min-width: 1280px;
+	height: 342px;
+	background: url("../img/map.jpg") no-repeat;
+	background-size: 100% auto;
+}
+.four .txt_1{
+	position: absolute;
+	color: #fff;
+	font-size: 21px;
+	top:52px;
+	left: 50%;
+	margin-left: -95px;
+}
+.underline{
+	position: absolute;
+	width: 34px;
+	height: 2px;
+	background-color: #fff;
+	top:82px;
+	left: 50%;
+	margin-left: -17px;
+}
+.four .txt_2{
+	position: absolute;
+	color: #fff;
+	font-size: 12px;
+	top:104px;
+	left: 50%;
+	margin-left: -168px;
+}
+.lookFor{
+	position: absolute;
+	left: 50%;
+	top:172px;
+	margin-left: -515px;
+	width: 1052px;
+	height: 36px;
+
+}
+select{
+	float: left;
+	height: 36px;
+	width: 236px;
+	margin-right: 36px;
+	appearance:none; 	/*清除下拉列表select的默认样式*/
+	-moz-appearance:none;	/*-moz:火狐浏览器私有属性*/
+	-webkit-appearance:none;	/*-webkit:谷歌、safari浏览器私有属性*/
+	border:0 solid;	/*去除默认边框*/
+	background: url("../img/select.jpg") no-repeat 98% #fff;
+	background-
+}
+.country{
+
+}
+.province{
+
+}
+.city{
+
+}
+.search{
+	float:left;
+	height: 36px;
+	width: 236px;
+	appearance:none;
+	-moz-appearence:none;
+	-webkit-appearance:none;
+	background-color: #bf4f49;
+	color: #fff;
+	border:0 solid;
 }

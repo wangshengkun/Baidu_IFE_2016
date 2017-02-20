@@ -9,6 +9,9 @@ a{
 	text-decoration: none;
 	cursor:pointer;		/*光标改变*/
 }
+ul li{
+	list-style: none;
+}
 header{
 	min-width: 1280px;
 	height: 58px;
@@ -176,39 +179,74 @@ nav a:hover{
 	left: 50%;
 	top:172px;
 	margin-left: -515px;
-	width: 1052px;
+	width: 1058px;
 	height: 36px;
-
 }
-select{
+.lookFor div{
 	float: left;
 	height: 36px;
 	width: 236px;
 	margin-right: 36px;
-	appearance:none; 	/*清除下拉列表select的默认样式*/
-	-moz-appearance:none;	/*-moz:火狐浏览器私有属性*/
-	-webkit-appearance:none;	/*-webkit:谷歌、safari浏览器私有属性*/
-	border:0 solid;	/*去除默认边框*/
+	font-size: 12px;
+	border: 1px solid #bf4f49;
 	background: url("../img/select.jpg") no-repeat 98% #fff;
-	background-
 }
-.country{
-
+.des{
+	display: block;
+	text-indent: 5%;
+	line-height: 36px;
 }
-.province{
-
+.select{
+	position: relative;
+	line-height: 26px;
+	text-indent: 15%;
+	border: 1px solid #bf4f49;
+	background-color: #e3e3e4;
+	z-index: 10;	/*z-indexz只应用于定位元素*/
 }
-.city{
-
+.selectItems:hover{
+	background: url("../img/tick.png") no-repeat 5% #bf4f49;
 }
 .search{
 	float:left;
 	height: 36px;
 	width: 236px;
-	appearance:none;
-	-moz-appearence:none;
-	-webkit-appearance:none;
+	appearance:none;	/*清除下拉列表select的默认样式*/
+	-moz-appearence:none;	/*-moz:火狐浏览器私有属性*/
+	-webkit-appearance:none;	/*-webkit:谷歌、safari浏览器私有属性*/
 	background-color: #bf4f49;
 	color: #fff;
 	border:0 solid;
+}
+.five{
+	position: relative;
+	width: 100%;
+	height: 604px;
+	min-width: 1280px;
+	background-color: #f7f7f7;
+}
+div[class^="package"]{
+	position: absolute;
+	top:100px;
+	height: 390px;
+	width: 220px;
+	margin-left: -110px;
+	background-color: #f7f7f7;
+}
+.five div[class$="One"]{
+	left: 20%;
+}
+.five div[class$="Two"]{
+	left: 40%;
+}
+.five div[class$="Three"]{
+	left: 60%;
+}
+.five div[class$="Four"]{
+	left: 80%;
+}
+div[class^="smallWrap"]{
+	height: 334px;
+	width: 220px;
+	background-color: #fff;
 }

@@ -235,18 +235,59 @@ div[class^="package"]{
 }
 .five div[class$="One"]{
 	left: 20%;
+	text-align: center;
 }
 .five div[class$="Two"]{
 	left: 40%;
+	text-align: center;
 }
 .five div[class$="Three"]{
 	left: 60%;
+	text-align: center;
 }
 .five div[class$="Four"]{
 	left: 80%;
+	text-align: center;
 }
 div[class^="smallWrap"]{
 	height: 334px;
 	width: 220px;
 	background-color: #fff;
+}
+.five div[class$="1"]{
+	background: url("../img/pic_1.jpg") center no-repeat #fff;
+}
+.five div[class$="2"]{
+	background: url("../img/pic_2.jpg") center no-repeat #fff;
+}
+.five div[class$="3"]{
+	background: url("../img/pic_3.jpg") center no-repeat #fff;
+}
+.five div[class$="4"]{
+	background: url("../img/pic_4.jpg") center no-repeat #fff;
+}
+.commonTxt{
+	font-weight: bold;
+	color: #636464;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.specialTxt{
+	font-size: 20px;
+	font-family: bold;
+	color: #636464;
+	letter-spacing: 20px;
+}
+.six{
+	height: 567px;
+	width: 100%;
+	min-width: 1280px;
+	background-color: #fff;
+}
+.sixL{
+	position: relative;
+	width: 70%;
+	height: 567px;
+	background: url("../img/men.jpg");
+	background-size: 100% auto;
 }

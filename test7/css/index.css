@@ -205,6 +205,7 @@ nav a:hover{
 	z-index: 10;	/*z-indexz只应用于定位元素*/
 }
 .selectItems:hover{
+	cursor: pointer;
 	background: url("../img/tick.png") no-repeat 5% #bf4f49;
 }
 .search{
@@ -217,6 +218,9 @@ nav a:hover{
 	background-color: #bf4f49;
 	color: #fff;
 	border:0 solid;
+}
+.search:hover{
+	cursor:pointer;
 }
 .five{
 	position: relative;
@@ -274,7 +278,7 @@ div[class^="smallWrap"]{
 }
 .specialTxt{
 	font-size: 20px;
-	font-family: bold;
+	font-weight: bold;
 	color: #636464;
 	letter-spacing: 20px;
 }
@@ -285,9 +289,77 @@ div[class^="smallWrap"]{
 	background-color: #fff;
 }
 .sixL{
+	float: left;
 	position: relative;
 	width: 70%;
 	height: 567px;
 	background: url("../img/men.jpg");
 	background-size: 100% auto;
+}
+.sixL p[class^="txt"]{
+	color: #fff;
+	position: absolute;
+	left: 50%;
+}
+.sixL p[class$="1"]{
+	font-size: 50px;
+	top:132px;
+	margin-left:-75px; 
+}
+.sixL p[class$="2"]{
+	font-size: 158px;
+	top:190px;
+	margin-left: -189px;
+}
+.sixL p[class$="3"]{
+	font-size: 22px;
+	top:370px;
+	margin-left: -73px;
+}
+.sixL p[class$="4"]{
+	font-size: 22px;
+	top:412px;
+	margin-left: -57px;
+}
+.triangle{
+	position: absolute;
+	display:inline-block;
+	border-top:14px solid transparent;
+	border-right:28px solid #fff;
+	border-bottom: 14px solid transparent;
+	right: 0;
+	top:50%;
+	
+}
+.sixR{
+	float: left;
+	position: relative;
+	width: 30%;
+	height: 567px;
+}
+.txt_5{
+	font-size: 18px;
+	font-weight: bold;
+	color: #323333;
+	letter-spacing: 3px;
+}
+.txt_5 span{
+	font-size: 18px;
+	color: #ea6563;
+}
+.sixR p{
+	line-height: 38px;
+}
+.more{
+	height: 34px;
+	width: 104px;
+	border:2px solid #e74f4d;
+	color: #e74f4d;
+	text-align: center;
+	line-height: 34px;
+}
+.more:hover{
+	cursor: pointer;
+	color: #fff;
+	background-color:#e74f4d; 
 }

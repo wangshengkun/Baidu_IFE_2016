@@ -330,7 +330,6 @@ div[class^="smallWrap"]{
 	border-bottom: 14px solid transparent;
 	right: 0;
 	top:50%;
-	
 }
 .sixR{
 	float: left;
@@ -420,7 +419,7 @@ div[class^="circle_"]:hover{
 	height: 520px;
 	width: 30%;
 	background:url("../img/woman.jpg") no-repeat;
-	background-size: 100% auto;
+	background-size: 100% 520px; /*将高度从auto变为具体数值，解决了浏览器宽度缩小而使得背景图高度也缩小的问题。*/
 }
 .seven p[class^="txt_"]{
 	position: absolute;
@@ -488,7 +487,7 @@ div[class^="circle_"]:hover{
 .eight{
 	height: 750px;
 	width: 100%;
-	min-width: 1280px;
+	min-width: 1280px; 
 	background-color: #fff;
 }
 .top{
@@ -518,12 +517,125 @@ div[class^="circle_"]:hover{
 	color:#aaaaaa;
 	text-align: center;
 }
+.bottom{
+	width: 100%;
+	height: 280px;
+	min-width: 1280px; /*将父元素宽度设置为恰好包含内部子元素所有内容的宽度，解决float:left下沉问题。*/
+}
 .bottomL{
+	float: left;
+	margin-left: 160px;
+	margin-right: 76px;
 	width:298px;
 	height:280px;
 }
-.bottomR{
-	width: 640px;
-	height: 280px;
+.agreement{
+	color:#979594;
+	text-align: left;
+	margin-bottom: 26px;
 }
-
+.agreementDetail{
+	font-size: 12px;
+	text-align: left;
+}
+.moreDetail{
+	text-align: right;
+	cursor:pointer;
+}
+.moreDetail:hover{
+	color:#000;
+}
+.bottomR{
+	float: left;
+	width: 666px;
+}
+.bottomR input[type="text"],textarea{
+	height: 38px;
+	width: 310px;
+	background-color: #ededef;
+	border:none;
+	text-indent: 1em;
+	margin-bottom: 14px;
+	margin-right: 20px;
+	color: #6c6564;
+}
+.bottomR textarea{
+	width: 640px;
+	height: 120px;
+	resize:none;
+}
+.bottomR input:nth-of-type(5){
+	height: 38px;
+	width: 640px;
+	background-color: #ededef;
+	border:none;
+	text-align: center;
+	font-weight: bold;
+	color: #323333;
+}
+.nine{
+	height: 360px;
+	width: 100%;
+	min-width: 1280px;
+	background-color: #32353e;
+}
+.nine p:nth-of-type(1){
+	font-size: 21px;
+	text-align: center;
+	color: #fff;
+	padding-top: 92px;
+}
+.nine p:nth-of-type(2){
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 12px;
+}
+.email{
+	text-align: center;
+	padding-bottom: 36px;
+}
+.nine input{
+	height:40px;
+	width: 430px;
+	text-indent: 1em;
+	color:#aaaaaa;
+	border:none;
+}
+button{
+	height: 40px;
+	width: 82px;
+	background-color: #6f7278;
+	color: #fff;
+	border: none;
+	cursor:pointer;
+	text-align: center;
+}
+.icon{
+	text-align: center;
+}
+.icon li{
+	display: inline-block;
+	margin-right: 24px;
+}
+footer{
+	position: relative;
+	height: 58px;
+	width: 100%;
+	min-width: 1280px;
+	background-color: #2f3039;
+}
+footer span{
+	position: absolute;
+	font-size: 12px;
+	line-height: 58px;
+	color: #fff;
+}
+footer span:nth-of-type(1){
+	left:3%;
+}
+footer span:nth-of-type(2){
+	right:3%;
+	cursor: pointer;
+}

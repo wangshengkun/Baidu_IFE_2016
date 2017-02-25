@@ -1,0 +1,48 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+header{
+	height: 56px;
+	width: 100%;
+	min-width: 1280px;
+	background-color:#2189bf;
+}
+a{
+	text-decoration: none;
+}
+.inner{
+	width: 1186px;	/*1210px*/
+	height: 56px;
+	margin:0 auto;
+}
+.logo{
+	float: left;
+	height: 36px;
+	width:36px;
+	padding-top: 10px; 
+	padding-left: 50px;
+}
+.searchAndLogin{
+	float:right;
+}	
+.searchAndLogin input{
+	width: 278px;
+	height: 28px;
+	background:url("../img/search.png") 18px no-repeat;
+	background-color: #fff;
+	border-radius: 14px;
+	padding-left: 35px;
+	margin:14px 18px 14px 0px;
+	border: none;
+}
+.searchAndLogin a{
+	background: url("../img/login.png")  0px 3px no-repeat;
+	padding-left: 18px;
+	color:#fff;
+}
+section{
+	display: block;
+	width: 1280px;
+	margin:0 auto;
+}

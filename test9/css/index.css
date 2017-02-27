@@ -123,7 +123,7 @@ section{
 .profile{
 	font-size: 12px;
 }
-.profile > li:nth-of-type(1){
+.profile > li:nth-of-type(1){  /*特殊值： 0 0 2 1*/
 	background-color: #383d4e;
 	color: #fff;
 	padding-top:12px;
@@ -131,10 +131,10 @@ section{
 	padding-bottom: 14px;
 }
 .form{
-	float: left;
+	/*float: left;
 	height: 12px;
 	width: 12px;
-	margin-right: 12px;
+	margin-right: 12px;*/
 	background: url("../img/form.png") no-repeat;
 }
 i[class^="more"]{
@@ -196,7 +196,7 @@ i[class="wordB"]{
 	margin-top:12px;
 	margin-left: 44px;
 }
-.profile > li:nth-of-type(2){
+/*.profile > li:nth-of-type(2){
 	margin-top: 14px;
 	color: #6e8096;
 	padding-left: 44px;
@@ -217,25 +217,36 @@ i[class="wordB"]{
 	margin-top: 34px;
 	color: #6e8096;
 	padding-left: 44px;
+}*/
+.profile > li + li{  /*特殊值： 0 0 1 2*/
+	margin-top: 34px;
+	color: #6e8096;
+	padding-left: 44px;
 }
 .star{
-	float: left;
+	/*float: left;
 	height: 12px;
 	width: 12px;
-	margin-right: 12px;
+	margin-right: 12px;*/
 	background: url("../img/star.png") no-repeat;
 }
 .share{
-	float: left;
+	/*float: left;
 	height: 11px;
 	width: 12px;
-	margin-right: 12px;
+	margin-right: 12px;*/
 	background: url("../img/share.png") no-repeat;
 }
 .id{
+	/*float: left;
+	height: 12px;
+	width: 12px;
+	margin-right: 12px;*/
+	background: url("../img/id.png") no-repeat;
+}
+.icon{
 	float: left;
 	height: 12px;
 	width: 12px;
 	margin-right: 12px;
-	background: url("../img/id.png") no-repeat;
 }

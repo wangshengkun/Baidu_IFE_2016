@@ -386,14 +386,32 @@ div[class^="turn"]::after{
 }
 .historyBox{
 	box-sizing: border-box;
+	position: relative;
 	width: 110px;
 }
-.historyBox:hover{
-	border-top: 4px solid #4389c9;
+.historyBox:hover::before{
+	position: absolute;
+	content:" ";
+	width: 110px;
+	height: 4px;
+	background-color: #4389c9;
 }
 .historyBox time{
+	display: block;
+	margin-top: 10px;
 	font-size: 12px;
 	text-align: center;
+}
+.historyBox strong{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 21px;
+	color: #ec6500;
+	text-align: center;
+}
+.historyBox b{
+	font-size: 15px;
+	color: #c0c0c0;
 }
 .historySearch{
 	width: 134px;
@@ -412,4 +430,204 @@ div[class^="turn"]::after{
 	line-height: 62px;
 	font-size: 12px;
 	font-weight: bold;
+}
+.count{
+	margin:20px auto 14px;
+	width: 890px;
+	height:90px;
+}
+.count > p{
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 6px;
+	color: #323333;
+}
+.count .countCase{
+	width: 890px;
+	height: 70px;
+}
+.countBox{
+	position: relative;
+	float: left;
+	height: 70px;
+	width: 196px;
+	border-left: 4px solid #44b29e;
+	margin-right: 30px;
+	background-color: #fff;
+}
+.countBox:last-child{
+	margin-right: 0px;
+}
+.countBox p{
+	padding-left: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #c3c3c3;
+}
+.countBox p:nth-of-type(1){
+	margin-top: 14px;
+	color: #999a9a;
+	font-weight: bold;
+}
+.countBox > div[class^="block"]{
+	position: absolute;
+	height: 46px;
+	width: 60px;
+	background-color: #43b29e;
+	top:14px;
+	right: 14px;
+}
+.countBox:nth-of-type(2){
+	border-left-color: #388ac1;
+}
+.countBox:nth-of-type(3){
+	border-left-color: #cf4a36;
+}
+.countBox:nth-of-type(4){
+	border-left-color: #e2cd47;
+}
+/*.block:nth-of-type(2){	父元素不同,无法使用
+	background-color: #388ac1 !important;
+}*/
+.countBox > div[class$="2"]{
+	background-color: #388ac1;
+}
+.countBox > div[class$="3"]{
+	background-color: #cf4a36;
+}.countBox > div[class$="4"]{
+	background-color: #e2cd47;
+}
+.project{
+	box-sizing:border-box;
+	height: 356px;
+	width: 890px;
+	margin: 0 auto;
+}
+.projectL, .projectR{
+	float: left;
+	height: inherit;
+	border-radius: 10px;
+	border:1px solid #ced0d4;
+	background-color: #fff;
+}
+.projectL{
+	position: relative;
+	width: 530px;
+	margin-right: 6px;
+}
+.proName{
+	width: inherit;
+	height: 42px;
+	background-color: #f4f5f7;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 12px;
+	color: #d8d9da;
+	line-height: 42px;
+	text-indent: 2em;
+	font-weight: bold;
+}
+.proItems li{
+	float: left;
+}
+.proItems input{
+	display: none;
+}
+.proItems label[for^="pro"]{
+	cursor: pointer;
+	box-sizing:border-box;
+	display: inline-block;
+	width: 84px;
+	height: 26px;
+	background-color: #ececef;
+	margin-right: 4px;
+	margin-top: 12px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 26px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.proItems li:first-child > label{
+	margin-left: 20px;
+}
+.proItems label[for*="project"]:hover{
+	background-color: #fff;
+	border:1px solid #ececef;
+	border-bottom: none;
+}
+div[class*="proList"]{
+	position: absolute;
+	height: 250px;
+	width: 490px;
+	left:20px;
+	border: 1px solid #cacbcb;
+}
+div[class*="proList"] table{
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left: -205px;
+	margin-top: -100px;
+	border-right: 1px solid #e8e9e9;
+	border-bottom: 1px solid #e8e9e9;
+}
+div[class*="proList"] table td{
+	height: 30px;
+	width: 100px;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	border-left: 1px solid #e8e9e9;
+	border-top: 1px solid #e8e9e9;
+}
+div[class*="proList"] table td:hover{
+	cursor: pointer;
+	background-color: #f4f5f6;
+}
+.projectR{
+	width: 350px;
+	font-size: 12px;
+	text-indent: 2em;
+}
+.projectR span{
+	color: #cccbcb;
+}
+.proTitle{
+	margin-left: 36px;
+	margin-top: 12px;
+	border-bottom: 1px solid #cccbcb;
+	height: 46px;
+	width: 284px;
+}
+.proTitle p,.proDetail p{
+	margin-top: 6px;
+	color: #535353;
+}
+.proDetail{
+	height: 46px;
+	width: 314px;
+	margin-left: 36px;
+	border-bottom: 1px solid #cccbcb;
+}
+.price,.peopel{
+	float: left;
+}
+.price{
+	width: 94px;
+	height: inherit;
+	border-right: 1px solid #cccbcb;
+}
+.proDes{
+	height: 148px;
+	width: 280px;
+	margin-left: 36px;
+	border-bottom: 1px solid #cccbcb;
+}
+.projectR input[type="checkbox"]{
+	margin-left: 36px;
+}
+.projectR input[type="submit"]{
+	margin-top: 6px;
+	margin-left: 134px;
 }

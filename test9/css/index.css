@@ -96,7 +96,7 @@ section{
 	margin-left: -23px;
 	margin-top: -23px;
 }
-.photo + .name{
+.photo + .userName{
 	position: absolute;
 	left:120px;
 	top:50%;
@@ -497,13 +497,14 @@ div[class^="turn"]::after{
 }.countBox > div[class$="4"]{
 	background-color: #e2cd47;
 }
-.project{
+.project, .other{
 	box-sizing:border-box;
 	height: 356px;
 	width: 890px;
 	margin: 0 auto;
+	margin-bottom: 10px;
 }
-.projectL, .projectR{
+.projectL, .projectR,.calendar,.order{
 	float: left;
 	height: inherit;
 	border-radius: 10px;
@@ -515,7 +516,7 @@ div[class^="turn"]::after{
 	width: 530px;
 	margin-right: 6px;
 }
-.proName{
+.name{
 	width: inherit;
 	height: 42px;
 	background-color: #f4f5f7;
@@ -630,4 +631,11 @@ div[class*="proList"] table td:hover{
 .projectR input[type="submit"]{
 	margin-top: 6px;
 	margin-left: 134px;
+}
+.calendar{
+	width: 350px;
+	margin-right: 6px;
+}
+.order{
+	width: 530px;
 }

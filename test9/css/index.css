@@ -12,7 +12,7 @@ header{
 a{
 	text-decoration: none;
 }
-ul{
+ul,ol{
 	list-style: none;
 }
 .clearfix::before, .clearfix::after{
@@ -62,6 +62,7 @@ section{
 .left{
 	float: left;
 	width: 260px;
+	height: 1210px;
 	background-color:#2a2e3d;
 }
 .info{
@@ -241,10 +242,6 @@ i[class="wordB"]{
 .position span:last-child{
 	color: #82a8cb;
 }
-/*.main{
-	width:890px;
-	background: #
-}*/
 .searchItem{
 	font-size: 12px;
 	width: 890px;
@@ -635,7 +632,140 @@ div[class*="proList"] table td:hover{
 .calendar{
 	width: 350px;
 	margin-right: 6px;
+	font-size: 12px;
 }
 .order{
 	width: 530px;
+	font-size: 12px;
+}
+.wrapTime{
+	height: 280px;
+	width: 306px;
+	margin:10 auto;
+	color: #b3b3b3;
+}
+.date{
+	cursor: pointer;
+	position: relative;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	height: 20px;
+	color:#9a9a9a;
+	border:1px solid #cdcece;
+}
+.d1{
+	width: 64px;
+}
+.d2{
+	width:86px;
+	text-align: center;
+}
+.d3{
+	width:76px;
+}
+.down{
+	background: url("../img/down.png") no-repeat 95%;
+}
+.wrapTime ol li{
+	cursor: pointer;
+	float: left;
+	width: 43px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 8px;
+	border-top:1px solid #a9cfec;
+	border-bottom: 1px solid #ececed;
+}
+.calendar table td{
+	cursor: pointer;
+	box-sizing:border-box;
+	width: 41px;
+	height: 41px;
+	text-align: center;
+}
+.weekend{
+	color: #cd3539;
+}
+.calendar table td span{
+	display: block;
+	color: #9a9a9a;
+}
+.holiday{
+	color: #cd3539 !important;
+}
+.border{
+	border: 1px solid #f7d564;
+}
+.calendar table td:hover{
+	border: 1px solid #cd3539;
+}
+.order table{
+	cursor: pointer;
+	margin: 26px auto;
+	border-collapse:collapse;
+}
+.order table th{
+	font-size: 13px;
+}
+.order table th,.order table td{
+	box-sizing:border-box;
+	height: 24px;
+	border: 1px solid #cacbcb;
+}
+.order table tr:hover{
+	background-color:#f4f5f7; 
+}
+.order table th:nth-of-type(1),.order table td:nth-of-type(1){
+	width: 70px;
+	text-align: center;
+}
+.order table th:nth-of-type(2),.order table td:nth-of-type(2){
+	width: 90px;
+	text-align: center;
+}
+.order table th:nth-of-type(3),.order table td:nth-of-type(3){
+	width: 290px;
+}
+.order table th:nth-of-type(3){
+	text-align: left;
+	padding-left: 34px;
+}
+.order table td:nth-of-type(3){
+	text-indent: 3em;
+}
+.order table progress{
+	width: 166px;
+	height: 4px;
+	border:medium;
+	vertical-align: middle;
+	margin-left: 14px;
+	background-color: #dddddd;
+}
+progress::-webkit-progress-bar{ 
+	background: transparent;
+}
+.p1::-moz-progress-bar{
+	background: #ec6e51; 
+}
+.p1::-webkit-progress-value{
+	background: #ec6e51; 
+}
+.p2::-moz-progress-bar{
+	background: #ee804f; 
+}
+p2::-webkit-progress-value{
+	background: #ee804f; 
+}
+.p3::-moz-progress-bar{
+	background: #f19e4f; 
+}
+.p3::-webkit-progress-value{
+	background: #f19e4f; 
+}
+.p4::-moz-progress-bar{
+	background: #7fcbf0; 
+}
+.p3::-webkit-progress-value{
+	background: #7fcbf0; 
 }

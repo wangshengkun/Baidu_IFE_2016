@@ -30,16 +30,42 @@ input:focus{
 	position: relative;
 	height:110px;
 	width: 270px;
-	background-color: #ff0000;
 }
 ul,ol{
 	list-style: none;
+}
+ul li{
+	position: absolute;
+	height: 110px;
+	width: 270px;
+}
+ul li:nth-of-type(1){
+	background-color:#ff0000;
+}
+ul li:nth-of-type(2){
+	background-color:#00ff00;
+}
+ul li:nth-of-type(3){
+	background-color: #0000ff;
+}
+ul li:target{
+	z-index: 2;
+	animation: 1s linear scroll;
+}
+@keyframes scroll {
+	from {
+    left: -100%;
+	}
+	to {
+    left: 0%;
+	}
 }
 ol{
 	cursor: pointer;
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	z-index: 3;
 }
 ol li{
 	float: left;
@@ -51,6 +77,7 @@ ol li{
 	margin-left: 2px;
 }
 a{
+	display: block;
 	color: #fff;
 	text-decoration: none;
 }

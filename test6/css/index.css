@@ -49,11 +49,12 @@ header{
 	width: 641px;
 }
 .maskL,.maskR{
-	position: absolute;		
+	position: absolute;
+	/*chrome浏览器环境下不加top值有bug*/
+	top:0;		
 	height: 301px;
 	width: 191px;
-	opacity:0.2;		
-	/*display: inline;*/
+	opacity:0.2;
 }
 .maskL{
 	left: 0;
@@ -172,13 +173,13 @@ header{
 	margin-top: 30px;
 }
 .txt_1{
-	font-style: "黑体";
+	font-family: "黑体";
 	font-size: 72px;
 	color:#f5e327;
 	font-style: italic;
 }
 .txt_2{
-	font-style: "黑体";
+	font-family: "黑体";
 	font-size: 42px;
 	color:#11456b;
 	font-weight: bold;
@@ -197,11 +198,11 @@ header{
 }
 .threeL p{
 	font-size: 16px;
-	font-style: "宋体";
+	font-family: "宋体";
 	color: #767777;
 	line-height: 16px;
 }
-.txt_4:first-letter{
+.txt_4::first-letter{
 	float: left;
 	font-size: 70px;
 	color: #f5e327;

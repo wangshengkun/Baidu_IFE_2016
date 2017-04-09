@@ -49,6 +49,7 @@ ul,ol{
 	padding-left: 35px;
 	margin:14px 18px 14px 0px;
 	border: none;
+	outline: none;
 }
 .searchAndLogin a{
 	background: url("../img/login.png")  0px 3px no-repeat;
@@ -253,7 +254,7 @@ i[class="wordB"]{
 	cursor: pointer;
 	font-size: inherit;
 	-moz-appearance:none;
-	-webkit-apearance:none;
+	-webkit-appearance:none;
 	height: 24px;
 	border:1px solid #cbcbcb;
 	padding-left: 4px;
@@ -641,7 +642,7 @@ div[class*="proList"] table td:hover{
 .wrapTime{
 	height: 280px;
 	width: 306px;
-	margin:10 auto;
+	margin:10px auto;
 	color: #b3b3b3;
 }
 .date{

@@ -11,7 +11,7 @@ table tbody tr:nth-of-type(-n+3){
 	color: #ff0000;
 }
 table tbody tr:nth-of-type(even){
-	background-color: #cccccc;
+	background-color: #ccc;
 }
 input{
 	margin-top: 10px;
@@ -46,7 +46,7 @@ ul li:nth-of-type(2){
 	background-color:#00ff00;
 }
 ul li:nth-of-type(3){
-	background-color: #0000ff;
+	background-color:#0000ff;
 }
 ul li:target{
 	z-index: 2;

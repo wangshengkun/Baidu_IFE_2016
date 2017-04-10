@@ -8,7 +8,6 @@ html{
 .flexContainer{
 	display: flex;
 	flex-direction: row;
-	flex-row:row;
 	justify-content:space-between;
 	align-items: center;
 	border: 1px solid #ccc;
